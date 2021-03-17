@@ -66,6 +66,11 @@ namespace InvoiceMaker.Controllers
             {
                 return BadRequest(new { Error = "Data tidak ditemukan." });
             }
+
+            _db.Languages.Remove(oldData);
+            await _db.SaveChangesAsync();
+
+            return Ok();
         }
 
     }
