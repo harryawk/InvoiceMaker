@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceMaker", "InvoiceMaker\InvoiceMaker.csproj", "{6F942322-E90F-483C-B3F8-672B3CFC71A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoiceMakerFrontend", "InvoiceMakerFrontend\InvoiceMakerFrontend.csproj", "{27C924BE-2BEA-40C6-9DD2-496D4D8D85BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F942322-E90F-483C-B3F8-672B3CFC71A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F942322-E90F-483C-B3F8-672B3CFC71A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F942322-E90F-483C-B3F8-672B3CFC71A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F942322-E90F-483C-B3F8-672B3CFC71A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C924BE-2BEA-40C6-9DD2-496D4D8D85BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C924BE-2BEA-40C6-9DD2-496D4D8D85BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C924BE-2BEA-40C6-9DD2-496D4D8D85BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C924BE-2BEA-40C6-9DD2-496D4D8D85BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EFEF84E-514F-4664-A2E6-49511B75DF2E}
+	EndGlobalSection
+EndGlobal
