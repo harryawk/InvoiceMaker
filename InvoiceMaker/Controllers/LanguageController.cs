@@ -49,6 +49,13 @@ namespace InvoiceMaker.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Language language)
         {
+            var lang = await _db.Languages.FindAsync(id);
+            if (lang == null)
+            {
+                return BadRequest(new { Error = "Data tidak ditemukan" });
+            }
+
+            language.ID = id;
             if (ModelState.IsValid)
             {
                 _db.Languages.Update(language);
@@ -61,13 +68,13 @@ namespace InvoiceMaker.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var oldData = await _db.Languages.FindAsync(id);
-            if (oldData == null)
+            var deletedData = await _db.Languages.FindAsync(id);
+            if (deletedData == null)
             {
                 return BadRequest(new { Error = "Data tidak ditemukan." });
             }
 
-            _db.Languages.Remove(oldData);
+            _db.Languages.Remove(deletedData);
             await _db.SaveChangesAsync();
 
             return Ok();
