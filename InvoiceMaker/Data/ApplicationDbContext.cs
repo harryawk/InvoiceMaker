@@ -15,10 +15,19 @@ namespace InvoiceMaker.Data
 
         }
 
+        
+
         public DbSet<Language> Languages { get; set; }
 
         public DbSet<Currency> Currencies { get; set; }
 
         public DbSet<UnitMeasurement> UnitMeasurements { get; set; }
+
+        public DbSet<PurchaseOrder> PurchaseOrders { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
