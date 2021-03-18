@@ -12,7 +12,7 @@ namespace InvoiceMaker.Models
         public int ID { get; set; }
 
         [Required]
-        public int No { get; set; }
+        public string No { get; set; }
 
         [Required]
         public string Name { get; set; }
